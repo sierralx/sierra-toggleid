@@ -1,6 +1,6 @@
 -- Sierra ToggleID - FiveM Script
-disPlayerNames = 5 --distance you see IDs at 
-keyToToggleIDs = 19 --left alt by default
+disPlayerNames = 5 -- Distance you see IDs at 
+keyToToggleIDs = 19 -- Left alt by default
 
 playerDistances = {}
 showIDsAboveHead = false
@@ -30,9 +30,6 @@ Citizen.CreateThread(function()
     end
 end)
 
-
-
-
 Citizen.CreateThread(function()
     while true do
         if showIDsAboveHead then
@@ -54,7 +51,6 @@ Citizen.CreateThread(function()
         Citizen.Wait(0)
     end
 end)
-
 
 function DrawText3D(x,y,z, text, r,g,b) 
     local onScreen,_x,_y=World3dToScreen2d(x,y,z)
